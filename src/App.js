@@ -6,7 +6,7 @@ import WelcomeScreen from './screens/WelcomeScreen';
 
 const App = () => {
   return (
-    <BrowserRouter basename="https://github.com/praveenkumar0222/vopa-asmt.git">
+    <BrowserRouter basename="/praveenkumar0222/vopa-asmt.git">
       <Routes>
         <Route path="/" element={<WelcomeScreen />} />
         <Route path="/tender" element={<TableData />} />

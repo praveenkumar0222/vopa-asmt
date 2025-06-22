@@ -2,7 +2,6 @@
   "name": "vopa-asmt",
   "version": "0.1.0",
   "private": true,
-  "homepage": "GopalSuryavanshi.github.io",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -25,7 +24,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

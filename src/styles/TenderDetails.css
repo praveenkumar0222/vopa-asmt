@@ -1,0 +1,336 @@
+body {
+  background-color: #f0f2f5;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.tender-details-container {
+  width: 100%;
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.tender-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  padding: 40px 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: 1px solid #e0e0e0;
+}
+
+.tender-title {
+  font-size: 2.4em;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #6495ed;
+  padding-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.tender-section {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.04);
+}
+
+.tender-section h3 {
+  font-size: 1.6em;
+  color: #34495e;
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-bottom: 2px dashed #aebedc;
+  padding-bottom: 12px;
+  font-weight: 600;
+}
+
+.tender-section p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #5d6d7e;
+  margin-bottom: 12px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.tender-section p:last-child {
+  margin-bottom: 0;
+}
+
+.tender-section strong {
+  color: #2c3e50;
+  font-weight: 700;
+  min-width: 160px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.source-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #6a82fb 0%, #fc5c7d 100%);
+  color: #ffffff;
+  padding: 14px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.15em;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(106, 130, 251, 0.4);
+  margin-top: 20px;
+  letter-spacing: 0.02em;
+}
+
+.source-link:hover {
+  background: linear-gradient(135deg, #5c72e2 0%, #eb526e 100%);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(106, 130, 251, 0.5);
+}
+
+.source-link:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(106, 130, 251, 0.3);
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+}
+
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #4f46e5;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 12px;
+}
+
+.loading-text {
+  font-size: 16px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 992px) {
+  .tender-details-container {
+    max-width: 760px;
+    margin: 30px auto;
+  }
+  .tender-card {
+    padding: 30px 35px;
+    gap: 25px;
+  }
+  .tender-title {
+    font-size: 2em;
+    margin-bottom: 25px;
+    padding-bottom: 18px;
+  }
+  .tender-section {
+    padding: 25px;
+  }
+  .tender-section h3 {
+    font-size: 1.4em;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+  }
+  .tender-section p {
+    font-size: 1em;
+    line-height: 1.7;
+    margin-bottom: 10px;
+  }
+  .tender-section strong {
+    min-width: 140px;
+  }
+  .source-link {
+    padding: 12px 25px;
+    font-size: 1.05em;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+  .tender-details-container {
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+  .tender-card {
+    padding: 25px;
+    gap: 20px;
+    border-radius: 12px;
+  }
+  .tender-title {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .tender-section {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .tender-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+  }
+  .tender-section p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-bottom: 8px;
+  }
+  .tender-section strong {
+    min-width: 120px;
+  }
+  .source-link {
+    padding: 10px 20px;
+    font-size: 1em;
+    width: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+  .tender-details-container {
+    margin: 15px auto;
+    padding: 0 5px;
+  }
+  .tender-card {
+    padding: 20px 15px;
+    gap: 15px;
+    border-radius: 10px;
+  }
+  .tender-title {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+  }
+  .tender-section {
+    padding: 15px 10px;
+    border-radius: 8px;
+  }
+  .tender-section h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+  }
+  .tender-section p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-bottom: 6px;
+  }
+  .tender-section strong {
+    min-width: unset;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.95em;
+  }
+  .source-link {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 0.95em;
+    margin-top: 15px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 380px) {
+  .tender-details-container {
+    padding: 0 2px;
+  }
+  .tender-card {
+    padding: 15px 10px;
+  }
+  .tender-section {
+    padding: 10px 5px;
+  }
+  .source-link {
+    padding: 6px 8px;
+    font-size: 0.9em;
+  }
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 15px;
+  position: relative;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.5s ease-in-out;
+}
+
+.deadline-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    font-weight: bold;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+.error-message, .no-data-message {
+  text-align: center;
+  font-size: 1.2em;
+  color: #dc3545;
+  padding: 30px;
+  background-color: #ffebeb;
+  border: 1px solid #dc3545;
+  border-radius: 8px;
+  margin: 40px auto;
+  max-width: 600px;
+}
+
+.no-data-message {
+  color: #6c757d;
+  background-color: #f8f9fa;
+  border-color: #e9ecef;
+}
+
+.chart-section, .progress-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(to bottom right, #EEF2FF, #F3E8FF);
+}
+
+.welcome-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.welcome-card {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    padding: 50px 40px;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    border: 1px solid #e0e0e0;
+}
+
+.welcome-title {
+    font-size: 3em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+}
+
+.welcome-subtitle {
+    font-size: 1.3em;
+    color: #5d6d7e;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.start-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #6a82fb 0%, #fc5c7d 100%);
+    color: #ffffff;
+    padding: 18px 35px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(106, 130, 251, 0.4);
+    outline: none;
+}
+
+.start-button:hover {
+    background: linear-gradient(135deg, #5c72e2 0%, #eb526e 100%);
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(106, 130, 251, 0.6);
+}
+
+.start-button:active {
+    transform: translateY(0);
+    box-shadow: 0 6px 15px rgba(106, 130, 251, 0.3);
+}
+
+.arrow-icon {
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+.start-button:hover .arrow-icon {
+    transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+    .welcome-card {
+        padding: 40px 30px;
+        border-radius: 12px;
+    }
+
+    .welcome-title {
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+
+    .welcome-subtitle {
+        font-size: 1.1em;
+        margin-bottom: 30px;
+    }
+
+    .start-button {
+        padding: 15px 30px;
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-container {
+        padding: 15px;
+    }
+
+    .welcome-card {
+        padding: 30px 20px;
+        border-radius: 10px;
+    }
+
+    .welcome-title {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .welcome-subtitle {
+        font-size: 1em;
+        margin-bottom: 25px;
+    }
+
+    .start-button {
+        padding: 12px 25px;
+        font-size: 1em;
+        width: 100%;
+        justify-content: center;
+    }
+}

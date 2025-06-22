@@ -12,6 +12,7 @@ COPY package.json ./
 
 RUN npm install --legacy-peer-deps
 
+RUN npm install ajv@^8.12.0 ajv-keywords@^5.1.0 --save
 # Copy the rest of your app's source code from your host to your image filesystem
 COPY . .
 

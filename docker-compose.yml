@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  vopa_app:
+    build:
+      context: .
+      dockerfile: Dockerfile # Specify the Dockerfile if it’s not named 'Dockerfile'
+    container_name: vopa.front_end-container # Name of the container
+    ports:
+      - "8051:3003"
+    restart: always
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
